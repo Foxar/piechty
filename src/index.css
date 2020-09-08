@@ -1,8 +1,9 @@
 :root {
-  --background_color: #9CC2B2;
-  --accent_color: #D5D0B7;
-  --accent_color_dark: #362e44;
-  --accent_color_light: #766692;
+    --text_color: #4F4641;
+    --background_color: #CEC2BD;
+    --accent_color: #CFB5A9;
+    --accent_color_dark: #B59F94;
+    --accent_color_light: #D2C0B4;
 }
 
 
@@ -12,8 +13,10 @@ body,html {
     width: 100%;
 }
 
-.App {
-    background:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("mainPic.jpg");
+.About {
+    background:linear-gradient(0deg,
+    rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    url("mainPic.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -29,14 +32,14 @@ div .mainSlide {
 }
 
 #Main2.mainSlide{
-    background-color: var(--accent_color);
     overflow: auto;
     background:linear-gradient( 0deg,
-                                rgba(255, 255, 255, 0.5),
-                                 rgba(255, 255, 255, 0.5)),
-                                url("mainPic.jpg");
+                                rgba(255, 255, 255, 0.35),
+                                 rgba(255, 255, 255, 0.35)),
+                                url("dog1.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 #title {
@@ -49,20 +52,115 @@ div .mainSlide {
 }
 
 #toDescBtn {
+    background-color: var(--background_color);
     border-radius: 50%;
     margin: 0 50%;
     min-height: 64px;
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
 }
 
 #desc {
-    padding: 1em;
-    margin-top: 20vh;
-    margin-left: 10vw;
-    width: 30vw;
-    height: 20vh;
-    font-family: "neuzeit-grotesk", sans-serif;
-    text-shadow: 2px 2px 5px #000000aa;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: var(--accent_color_light);
+    color: var(--text_color);
+    padding: 5em;
+    margin-left: 70vw;
 
+    font-family: "neuzeit-grotesk", sans-serif;
+}
+
+#navbar {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    padding-right: 5vw;
+    background-color: var(--background_color);
+}
+
+#navBtnGroup a{
+    color: var(--text_color);
+    border-color: var(--accent_color_dark);
+}
+
+div.News {
+    overflow: auto;
+    background:linear-gradient( 0deg,
+                                rgba(255, 255, 255, 0.35),
+                                 rgba(255, 255, 255, 0.35)),
+                                url("dogs1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+div.News .MuiTypography-h4 {
+    display: inline;
+    font-family: Impact;
+    color: var(--text_color);
+}
+
+div.newsPanel {
+    color: var(--text_color);
+    border-radius: 5px;
+    padding: 2% 2% 3% 2%;
+    margin: 20vh 15vw 10vh;
+    background-color: var(--background_color);
+}
+
+div.newsPanel #newsHeaderCont {
+    position: relative;
+    padding: 0;
+    border-bottom: 2px var(--accent_color_dark) solid;
+}
+
+div.News .MuiTypography-subtitle1 {
+    margin-top: 2vh;
+}
+
+div.newsPanel #newsHeaderCont #newsDate {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    color: var(--accent_color_dark);
+}
+
+div.newsPanel img.newsPic {
+    margin-top: 5vh;
+    width: 100%;
+}
+
+div.galleryPanel {
+    color: var(--text_color);
+    padding: 2% 2% 3% 2%;
+    margin: 10vh 15vw;
+    background-color: var(--background_color);
+}
+
+div.galleryPanel .MuiTypography-h4 {
+    padding: 1vh 0 1vh;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Impact;
+    color: var(--text_color);
+    border-bottom: 2px var(--accent_color_dark) solid;
+}
+
+div.gallery {
+    overflow: auto;
+    background:linear-gradient( 0deg,
+                                rgba(255, 255, 255, 0.35),
+                                 rgba(255, 255, 255, 0.35)),
+                                url("dogs1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
