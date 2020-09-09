@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './About';
 import News from './News';
+import Events from './Events';
 import Gallery from './Gallery';
 import logo from './logo.svg';
 import {Container, Typography, Button, Grow, Paper} from '@material-ui/core';
@@ -25,6 +26,7 @@ class App extends React.Component {
                 <Route exact path="/" component={About} />
                 <Route path="/news" component={News}/>
                 <Route path="/gallery" component={Gallery}/>
+                <Route path="/events" component={Events}/>
             </Switch>
         </Router>
     );

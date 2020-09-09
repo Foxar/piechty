@@ -137,6 +137,83 @@ div.newsPanel img.newsPic {
     width: 100%;
 }
 
+
+
+div.Events {
+    overflow: auto;
+    background:linear-gradient( 0deg,
+                                rgba(255, 255, 255, 0.35),
+                                 rgba(255, 255, 255, 0.35)),
+                                url("dogs1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+div.Events .MuiTypography-h4 {
+    display: inline;
+    font-family: Impact;
+    color: var(--text_color);
+}
+
+div.eventsPanel {
+    color: var(--text_color);
+    border-radius: 5px;
+    padding: 2% 2% 3% 2%;
+    margin: 20vh 15vw 10vh;
+    background-color: var(--background_color);
+
+}
+
+div.eventsPanel #eventsHeaderCont {
+    position: relative;
+    padding: 0;
+    border-bottom: 2px var(--accent_color_dark) solid;
+}
+
+div.Events .MuiTypography-subtitle1 {
+    margin-top: 2vh;
+}
+
+div.eventsPanel #eventsHeaderCont #eventsDate {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    color: var(--accent_color_dark);
+}
+
+div.eventsPanel img.eventsPic {
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.mapCont  {
+    display: inline-block;
+
+    width: 50%;
+}
+
+div.eventDesc .MuiTypography-root {
+    float: left;
+    display: inline;
+    width: 50%;
+}
+
+
+div.eventDesc {
+    display: inline-block;
+    margin-top: 5vh;
+}
+
+div.eventDesc .MuiTypography-root {
+    display: inline-block;
+
+}
+
+
 div.galleryPanel {
     color: var(--text_color);
     padding: 2% 2% 3% 2%;

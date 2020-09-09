@@ -19,9 +19,9 @@ class Navbar extends React.Component {
                         <Button component={Link} to="/">O nas</Button>
                         <Button component={Link} to="/news">Nowości</Button>
                         <Button component={Link} to="/gallery">Galeria</Button>
-                        <Button component={Link} to="/news">Wydarzenia</Button>
-                        <Button component={Link} to="/news">Zasady</Button>
-                        <Button component={Link} to="/news">Kontakt</Button>
+                        <Button component={Link} to="/events">Wydarzenia</Button>
+                        <Button component={Link} to="/rules">Zasady</Button>
+                        <Button component={Link} to="/contact">Kontakt</Button>
                     </ButtonGroup>
                 </Container>
             </Router>
