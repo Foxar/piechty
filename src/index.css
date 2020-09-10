@@ -107,9 +107,8 @@ div.News .MuiTypography-h4 {
 
 div.newsPanel {
     color: var(--text_color);
-    border-radius: 5px;
     padding: 2% 2% 3% 2%;
-    margin: 20vh 15vw 10vh;
+    margin: 20vh 10vw 10vh;
     background-color: var(--background_color);
 }
 
@@ -159,9 +158,8 @@ div.Events .MuiTypography-h4 {
 
 div.eventsPanel {
     color: var(--text_color);
-    border-radius: 5px;
     padding: 2% 2% 3% 2%;
-    margin: 20vh 15vw 10vh;
+    margin: 20vh 10vw 10vh;
     background-color: var(--background_color);
 
 }
@@ -240,4 +238,47 @@ div.gallery {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+}
+
+
+div.Rule {
+    overflow: auto;
+    background:linear-gradient( 0deg,
+                                rgba(255, 255, 255, 0.35),
+                                 rgba(255, 255, 255, 0.35)),
+                                url("dogs1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+div.Rule .MuiTypography-h4 {
+    display: block;
+    font-family: Impact;
+    color: var(--text_color);
+    text-align: center;
+}
+
+div.rulesPanel {
+    color: var(--text_color);
+    padding: 2% 2% 3% 2%;
+    margin: 20vh 15vw 10vh;
+    background-color: var(--background_color);
+}
+
+div.rulesPanel #rulesHeaderCont {
+    position: relative;
+    padding: 0;
+    border-bottom: 2px var(--accent_color_dark) solid;
+}
+
+div.Rule .MuiTypography-subtitle1 {
+    margin-top: 2vh;
+}
+
+div.rulesPanel img.newsPic {
+    margin-top: 5vh;
+    width: 100%;
 }
